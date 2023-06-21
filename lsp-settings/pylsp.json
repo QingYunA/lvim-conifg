@@ -1,0 +1,5 @@
+
+{
+  "pylsp.plugins.pycodestyle.maxLineLength": 200,
+  "pylsp.plugins.yapf.enabled": true
+}
