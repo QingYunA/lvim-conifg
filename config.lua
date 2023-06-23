@@ -5,6 +5,7 @@
 
 -- key binding remap--
 lvim.keys.normal_mode["<C-d>"] = "<C-d>zz"
+lvim.keys.normal_mode["<C-d>"] = "<C-d>zz"
 lvim.keys.insert_mode["jj"] = "<Esc>"
 --lvim.keys.normal_mode["<leader-1>"]=":b 1"
 --lvim.keys.normal_mode["<leader-2>"]=":b 2"
@@ -40,11 +41,11 @@ lvim.plugins={
   -- colorschemes --
   {"lunarvim/colorschemes"},
   -- smooth scroll -- 
-  {"karb94/neoscroll.nvim",
-    config= function ()
-      require('neoscroll').setup()
-    end
-  },
+  -- {"karb94/neoscroll.nvim",
+  --   config= function ()
+  --     require('neoscroll').setup()
+  --   end
+  -- },
   -- monokai pro colorscheme --
   {
     "loctvl842/monokai-pro.nvim",
@@ -76,12 +77,12 @@ lvim.plugins={
   end
   },
   -- auto save when change file --
-  --{
-  --"Pocco81/auto-save.nvim",
-  --config = function()
-  --  require("auto-save").setup()
-  --end,
-  --},
+  {
+  "Pocco81/auto-save.nvim",
+  config = function()
+   require("auto-save").setup()
+  end,
+  },
   -- markdown preview --
   {
   "iamcco/markdown-preview.nvim",
