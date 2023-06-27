@@ -31,6 +31,7 @@ end
 local key_remap = function()
   lvim.keys.normal_mode["<C-d>"] = "<C-d>zz"
   lvim.keys.normal_mode["<C-d>"] = "<C-d>zz"
+  lvim.keys.normal_mode["<C-o>"] = "<C-o>zz"
   lvim.keys.insert_mode["jj"] = "<Esc>"
 end
 

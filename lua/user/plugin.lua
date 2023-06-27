@@ -88,7 +88,7 @@ M.config = function()
       event = "BufRead",
     },
     -- clever f --
-    { "rhysd/clever-f.vim" },
+    -- { "rhysd/clever-f.vim" },
     -- github copilot --
     {
       "zbirenbaum/copilot-cmp",
@@ -96,12 +96,11 @@ M.config = function()
       dependencies = { "zbirenbaum/copilot.lua" },
       config = function()
         vim.defer_fn(function()
-          require("copilot").setup() -- https://github.com/zbirenbaum/copilot.lua/blob/master/README.md#setup-and-configuration
+          require("copilot").setup()     -- https://github.com/zbirenbaum/copilot.lua/blob/master/README.md#setup-and-configuration
           require("copilot_cmp").setup() -- https://github.com/zbirenbaum/copilot-cmp/blob/master/README.md#configuration
         end, 100)
       end,
     }
-
   }
 end
 return M
