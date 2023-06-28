@@ -1,15 +1,7 @@
-
 -- colorscheme --
 lvim.colorscheme = "catppuccin-mocha"
 
--- key binding remap--
-lvim.keys.normal_mode["<C-d>"] = "<C-d>zz"
-lvim.keys.normal_mode["<C-d>"] = "<C-d>zz"
-lvim.keys.insert_mode["jj"] = "<Esc>"
---lvim.keys.normal_mode["<leader-1>"]=":b 1"
---lvim.keys.normal_mode["<leader-2>"]=":b 2"
---lvim.keys.normal_mode["<leader-3>"]=":b 3"
---
+
 --
 -- lualine settings --
 lvim.builtin.lualine.style = "default" -- or "none"
@@ -39,4 +31,5 @@ lvim.builtin.treesitter.rainbow.enable = true
 require("user.plugin").config()
 -- vimtex config --
 require("user.vimtex").config()
-
+-- key binding settings --
+require("user.key_bindings").config()
