@@ -33,6 +33,16 @@ local key_remap = function()
   lvim.keys.normal_mode["<C-d>"] = "<C-d>zz"
   lvim.keys.normal_mode["<C-o>"] = "<C-o>zz"
   lvim.keys.insert_mode["jj"] = "<Esc>"
+  -- lvim.keys.normal_mode["gd"] = "<cmd>Lspsaga peek_definition<CR>"
+  lvim.lsp.buffer_mappings.normal_mode['gd'] = { "<cmd>Lspsaga peek_definition<CR>", "Peek definition" }
+  -- lvim.lsp.buffer_mappings.normal_mode['gD'] = nil
+  lvim.lsp.buffer_mappings.normal_mode['gD'] = { "<cmd>lua vim.lsp.buf.definition()<CR>", "Goto definition" }
+
+  -- set default to nil then set it --
+  -- lvim.lsp.buffer_mappings.normal_mode["gd"] = nil
+  -- lvim.keys.normal_mode["gd"] = "<cmd>Lspsaga peek_definition<CR>"
+  -- lvim.lsp.buffer_mappings.normal_mode["gD"] = nil
+  -- lvim.keys.normal_mode['gD'] = "<cmd>lua vim.lsp.buf.definition()<CR>"
 end
 
 M.config = function()

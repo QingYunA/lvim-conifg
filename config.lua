@@ -1,7 +1,6 @@
 -- colorscheme --
 lvim.colorscheme = "catppuccin-mocha"
 
-
 --
 -- lualine settings --
 lvim.builtin.lualine.style = "default" -- or "none"
