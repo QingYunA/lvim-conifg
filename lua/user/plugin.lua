@@ -36,12 +36,12 @@ M.config = function()
       end
     },
     -- auto save when change file --
-    {
-      "Pocco81/auto-save.nvim",
-      config = function()
-        require("auto-save").setup()
-      end,
-    },
+    -- {
+    --   "Pocco81/auto-save.nvim",
+    --   config = function()
+    --     require("auto-save").setup()
+    --   end,
+    -- },
     -- markdown preview --
     {
       "iamcco/markdown-preview.nvim",

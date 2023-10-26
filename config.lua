@@ -1,6 +1,6 @@
 -- colorscheme --
 lvim.colorscheme = "catppuccin-mocha"
-
+--
 --
 -- lualine settings --
 lvim.builtin.lualine.style = "default" -- or "none"
@@ -32,3 +32,4 @@ require("user.plugin").config()
 require("user.vimtex").config()
 -- key binding settings --
 require("user.key_bindings").config()
+-- vim.opt.mouse = ""
